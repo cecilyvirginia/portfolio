@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script> 
+    <script type="text/javascript"> 
+    (function(){ emailjs.init("BcUuY-vsb7L1D9u5t"); })();
+        </script>
+
+</head>
+<body>
+   
+    <header class="overflow">
+        <div class="mainheaderdivision">
+            <div class="subheader1">
+                <h2 class="headercouchly">CecilyVirginia</h2></div>
+                <div class="subdivisionheader1">
+                    <ul class="listdivision">
+                        <li> <a class="colours" href="#home" >HOME</a></li>
+                        <li> <a class="colours" href="#about">ABOUT</a></li>
+                        <li> <a class="colours" href="#portfolio">PORTFOLIO</a></li>
+                        <li> <a class="colours" href="#contact">CONTACT</a></li>
+                      </ul>
+                    
+                      <div class="typewriter">
+                        <h1 class="hello">Hello,I'm Cecily Virginia</h1>
+                        <h1>
+                            <a href="" class="typewrite" data-period="2000" data-type='[ "I am a front-end Web Developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                              <span class="wrap"></span>
+                            </a>
+                          </h1>
+                      </div>
+                </div>
+            </div></header>
+            <script>
+                var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    
+                
+
+            </script>
+
+            <main class="overflow">
+                <sectionone id="home">
+                    <div class="firstmaindiv">
+                        <div class="firstsubdivone">
+                            <img class="profileimg" src="pexels-antoni-shkraba-5306494.jpg">
+
+                        </div>
+                        <div class="firstsubdivtwo">
+                            <p class="every">HELLO EVERYBODY, I AM</p>
+                            <h1 class="cecily">CECILY VIRGINIA</h1>
+                            
+                            <h3 class="front">Front-end Developer</h3>
+                            <p class="look">
+                                I'm looking forward to kick-start my career in Web Development,having said that I'm a highly driven and motivated individual with creative skills.I've always been interested in learning new technologies and languages,so much that it has become my passion.I'm passionate about everything that goes into making websites.I'm eager and very excited to bring my skills to a new opportunity and make a meaningful contribution to a dynamic team.
+                            </p>
+                            <img class="calendar" src="deep-pink-calendar-icon-592887-removebg-preview.png"><p class="fourteen">14th June 1997</p>
+                            <img class="phone" src="phone-clipart-pink-9.png"><p class="numb">9025838953</p>
+                            <img class="email" src="pink-email-icon-13-removebg-preview.png"><p class="mail">cecilyvirginia71@gmail.com</p> 
+                            <img class="git" src="th__4_-removebg-preview.png" ><p class="mail">https://github.com/cecilyvirginia</p> 
+                            <button class="resume"><a href="Cecily_Virginia_A.C_-_Front_end_Web_Developer (1).pdf">Download CV</a></button>
+
+                                         </div>
+                    </div>
+                </sectionone>
+                <sectiontwo>
+                    <h3 class="port">  About Me</h3>
+                    <h2 class="res">More of My Credentials</h2>
+                    <div class="secondmaindiv">
+                       
+                        <div class="secondsubdivone">
+
+<h4 class="edu">Education</h4>
+<div class="mainline">
+    <div class="dot">
+
+    </div>
+    <div>
+        <p class="t">2023(Feb-July)</p>
+         <p class="web1">  WEB-D SCHOOL<br></p>
+            <p class="web"> Web Design & Web Development (Front End)</p>
+    </div>
+    <div class="dot">
+       
+    </div>
+    <div>
+       <p class="t">2015-2019</p>
+       <p class="web1"> SKR Engineering College<br></p>
+        <p class="web">B.E(Electrical & Electronics Engineering)</p>
+    </div>
+    <div class="dot">
+       
+    </div>
+    <div>
+        <p class="t">2014 - 2015</p>
+        <p class="web1"> St.Joseph's Convent</p>
+        <p class="web"> HSC </p>
+    </div>
+</div>
+</div>
+<div class="secondsubdivtwo">
+    <h4 class="skills">Skills</h4>
+    <div class="secondsubdivthree">
+        
+    <div>
+    <img class="html" src="HTML5_badge.png"><h4 class="htmltxt">HTML</h4></div>
+
+
+<div>
+    <img class="html" src="css.png"><h4 class="htmltxt">CSS</h4></div>
+    
+
+<div>
+    <img class="html" src="bootstrap-logo-shadow.png"><h4 class="htmltxt">Bootstrap</h4></div>
+    
+
+<div>
+    <img class="html" src="adobe-photoshop-logo-0.png"><h4 class="htmltxt">Photoshop</h4></div>
+    
+
+<div>
+    <img class="html" src="jquery-61c323b5e33214d6c3d442ed276eab68.png"><h4 class="htmltxt">Jquery</h4></div>
+    
+
+<div>
+    <img class="word" src="3-2-wordpress-logo-png-pic.png"><h4 class="htmltxtw">Wordpress</h4></div>
+    
+
+<div>
+    <img class="html" src="javs.png"><h4 class="htmltxt3">Java Script</h4></div>
+    
+
+<div>
+   
+    <img class="html" src="2000px-Figma-logo.svg-1024x1536.png"><h4 class="htmltxt4">Figma</h4></div>
+
+
+<div>
+    <img class="html2" src="1_YsPpBr_PgtyTR6CFDmKU9g.png"><h4 class="htmltxt1">React</h4></div>
+
+    
+</div>
+</div>
+</div>
+</sectiontwo>
+<sectionthree>
+    <h3 class="my">Portfolio</h3>
+    <h2 class="check">Check My Works</h2>
+    <div class="thirdmaindiv">
+        <div class="container">
+            <img src="Dry-Fruits-and-Nuts.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text"><h2 class="eat">EAT FIT</h2><br><h4>HTML&CSS</h4><br>
+           <h4> Desktop and mobile</h4><br>
+        <a class="click" href="https://cecilyvirginia.github.io/eatfit/">Click Here</a></h4></div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="furniture.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text"><h2 class="couchly">COUCHLY-MULTI PAGE</h2><br><h4>HTML&CSS</h4><br>
+            <h4>Desktop and Mobile</h4><br>
+        <a class="click" href="https://cecilyvirginia.github.io/couchly/">Click Here</a></div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="foody-mobile-bakery-erp-software--321-636350158337472925.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text"><h2 class="wild">BAKERY-SINGLE PAGE</h2><br><h4>BOOTSTRAP</h4><br>
+                <h4>Desktop Only</h4><br>
+                <a class="click" href="https://cecilyvirginia.github.io/bakery/">Click Here</a></div>
+            </div>
+          </div>
+
+
+        </div>
+                
+    
+        <div class="thirdmaindivtwo">
+            <div class="container">
+                <img src="perfume.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text"><h2 class="eat">PERFUME SQUARE</h2><br><h4>BOOTSTRAP</h4><br>
+               <h4> Desktop Only</h4><br>
+            <a class="click" href="https://cecilyvirginia.github.io/perfume/">Click Here</a></h4></div>
+                </div>
+              </div>
+    
+              <div class="container">
+                <img src="th (7).jpeg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text"><h2 class="couchly">LUNAR STRATEGY</h2><br><h4>HTML&CSS</h4><br>
+                <h4>Desktop Only</h4><br>
+            <a class="click" href="https://cecilyvirginia.github.io/lunar/">Click Here</a></div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="pexels-photo-1178683.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text"><h2 class="wild">TIMER</h2><br><h4>JAVASCRIPT</h4><br>
+                    <h4>Desktop Only</h4><br>
+                    <a class="click" href="https://cecilyvirginia.github.io/timer/">Click Here</a></div>
+                </div>
+              </div>
+    
+    
+            </div>
+
+
+            <div class="thirdmaindivtwo">
+                <div class="container">
+                    <img src="th (5).jpeg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text"><h2 class="eat">API-COUNTRY DETAILS WITH IP </h2><br><h4>JAVASCRIPT</h4><br>
+                   <h4> Desktop Only</h4><br>
+                <a class="click" href="https://cecilyvirginia.github.io/api/">Click Here</a></h4></div>
+                    </div>
+                  </div>
+        
+                  <div class="container">
+                    <img src="manager-1536x1024.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text"><h2 class="couchly">CRUD-EMPLOYEE MANAGEMENT</h2><br><h4>JAVASCRIPT</h4><br>
+                    <h4>Desktop Only</h4><br>
+                <a class="click" href="https://cecilyvirginia.github.io/crud/">Click Here</a></div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <img src="3-popular-types-of-specs.png" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text"><h2 class="wild">SPECTACLE WEBSITE</h2><br><h4>REACT</h4><br>
+                        <h4>Desktop Only</h4><br>
+                        <a class="click" href="">Click Here</a></div>
+                    </div>
+                  </div>
+        
+        
+                </div>
+
+
+                <div class="thirdmaindivtwo">
+                    <div class="container">
+                        <img src="transactional-chatbot-760.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text"><h2 class="eat">CRUD-CHATBOX</h2><br><h4>REACT</h4><br>
+                       <h4> Desktop Only</h4><br>
+                    <a class="click" href="https://cecilyvirginia.github.io/testingone/">Click Here</a></h4></div>
+                        </div>
+                      </div>
+            
+                      <div class="container">
+                        <img src="elearning.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text"><h2 class="couchly">E-LEARNING</h2><br><h4>WORDPRESS</h4><br>
+                        <h4>Desktop Only</h4><br>
+                    <a class="click" href="">Click Here</a></div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <img src="perfume.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text"><h2 class="wild">SPECTACLE WEBSITE</h2><br><h4>REACT</h4><br>
+                            <h4>Desktop Only</h4><br>
+                            <a class="click" href="">Click Here</a></div>
+                        </div>
+                      </div>
+            
+            
+                    </div>
+
+</sectionthree>
+
+
+<sectionfour>
+    
+    <h3 class="contact">Contact</h3>
+    <h2 class="hear">I'd love to hear from you</h2>
+    <div class="fourthmaindiv">
+    <input type="text" id="from_name" placeholder="Enter your Name"><br><br>
+    <input type="text" id="email_id" placeholder="Enter your Email"><br><br>
+    <input type="number" placeholder="Enter your number" id="mobile_number"><br>
+    <!-- <input type="text" id="message"> -->
+    <textarea id="message" cols="30" rows="10" placeholder="please enter your message"></textarea><br>
+    <button class="submit" emailjsintegration()">SUBMIT</button>
+    </div>
+
+    <script>
+        function emailjsintegration(){
+            let totalvalue = {
+                from_name: document.getElementById("from_name").value,
+               email_id: document.getElementById("email_id").value,
+                mobile_number: document.getElementById("mobile_number").value,
+             message: document.getElementById("message").value,
+            }
+            emailjs.send("service_v7hi3hc","template_esiti7a",totalvalue).then(function (res) {
+                alert("message sent successfully"+res.status)
+                
+            })
+
+        }
+    </script>
+</sectionfour>
+<script>
+
+
+anime({
+  targets: ['.svg-attributes-demo polygon','.html', 'feTurbulence', 'feDisplacementMap'],
+  points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+  baseFrequency: 0,
+  scale: 1.2,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutExpo'
+});
+anime({
+  targets: ['.svg-attributes-demo polygon','.word', 'feTurbulence', 'feDisplacementMap'],
+  points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+  baseFrequency: 0,
+  scale: 1.2,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutExpo'
+});
+anime({
+  targets: ['.svg-attributes-demo polygon','.html2', 'feTurbulence', 'feDisplacementMap'],
+  points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+  baseFrequency: 0,
+  scale: 1.2,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutExpo'
+});
+  </script>
+
+  <script>
+    function getSamePageAnchor (link) {
+  if (
+    link.protocol !== window.location.protocol ||
+    link.host !== window.location.host ||
+    link.pathname !== window.location.pathname ||
+    link.search !== window.location.search
+  ) {
+    return false;
+  }
+
+  return link.hash;
+}
+
+// Scroll to a given hash, preventing the event given if there is one
+function scrollToHash(hash, e) {
+  const elem = hash ? document.querySelector(hash) : false;
+  if(elem) {
+    if(e) e.preventDefault();
+    gsap.to(window, {scrollTo: elem});
+  }
+}
+
+// If a link's href is within the current page, scroll to it instead
+document.querySelectorAll('a[href]').forEach(a => {
+  a.addEventListener('click', e => {
+    scrollToHash(getSamePageAnchor(a), e);
+  });
+});
+
+// Scroll to the element in the URL's hash on load
+scrollToHash(window.location.hash);
+  </script>
+
+            </main>
+</body>
+    

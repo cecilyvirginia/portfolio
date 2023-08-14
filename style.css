@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Inter&family=Poppins&family=Righteous&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+     background-color:black;
+}
+
+.listdivision{
+    display: flex;
+    justify-content: space-between;
+}
+.listdivision li{
+    list-style-type:  none;
+    margin-left:190px;
+    margin: 10px 50px;
+    font-family: 'inter';
+}
+.listdivision a{
+    text-decoration: none;
+    color:white !important;
+    font-size: 17px;
+    font-weight: bold;
+}
+.mainheaderdivision{
+    display: flex;
+}
+.headercouchly{
+margin-top: 10px;
+color:#f70776;
+margin-right: 600px;
+margin-left: 40px;
+font-family: 'Lacquer',cursive;
+}
+header{
+    /* background-color:#132743; */
+    background-image: url("hd.png");
+    height: 600px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+    
+    
+    
+}
+.typewrite h1 {
+    color: #f70776;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+     
+  }
+  
+  .hello {
+    
+   color: #F3F6FB;
+    font-size: 51px;
+    position: relative;
+    text-align: center;
+    left: -398px;
+    margin-top: 310px;
+    margin-bottom: 50px;
+    font-family: "Heebo";
+    font-weight: bolder;
+}
+.typewriter{
+    height:300px;
+position: relative;
+    margin-top: -170px;
+    margin-left: -80px;
+    }
+a:-webkit-any-link {
+    color: #f70776;
+    cursor:pointer;
+    font-family: 'heebo';
+    
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.firstmaindiv{
+    margin-top: 50px !important;
+    height:700px;
+    background-color:rgba(255, 255, 255, 0.167);
+    width:70%;
+    margin: auto;
+    display: flex;
+    font-family: "heebo";
+    /* background-color: #F3F6FB;
+    border:0.5px solid#d2d2d26b; */
+    /* background-color:#F3F6FB; */
+    
+}
+.profileimg{
+    height:550px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 20px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    position: relative;
+    top:74px;
+}
+.every{
+    padding-top: 56px;
+margin-left: 100px;
+color:#f70776
+}
+.cecily{
+    margin-left: 100px;
+    color:rgba(255, 255, 255, 0.545);
+   
+}
+.virginia{
+    margin-left: 100px;
+    color:rgba(255, 255, 255, 0.545);
+   
+}
+.front{
+    color:rgba(255, 255, 255, 0.545);
+   
+    margin-left: 105px;
+    margin-bottom: 10px;
+    
+}
+.look{
+    margin-left: 100px;
+    width:75%;
+    color:rgba(255, 255, 255, 0.545);
+   
+}
+.calendar{
+    margin-top: 30px;
+    height:25px;
+    position: relative;
+left: 80px;
+}
+.phone{
+    height:20px;
+    position: relative;
+margin-left: 110px;
+}
+.email{
+    height:20px;
+    position: relative;
+    margin-left: 110px;
+}
+.git{
+    height: 20px;
+    position: relative;
+    margin-left: 110px;
+}
+.fourteen{
+position: relative;
+left: 150px;
+top:-30px;
+color:rgba(255, 255, 255, 0.545);
+   
+}
+.numb{
+    position: relative;
+    left: 150px;
+    top:-30px;
+    color:rgba(255, 255, 255, 0.545);
+   
+}
+.mail{
+    position: relative;
+    left: 150px;
+    color:rgba(255, 255, 255, 0.545);
+   
+    top:-30px;
+}
+.secondmaindiv{
+    height:600px;
+    /* background-color:black; */
+    position: relative;
+    top:30px;
+    background-image: linear-gradient(to right, #000000, #f70776)
+    margin: auto;
+}
+.res{
+    text-align: center;
+    padding-top: 0px;
+    color:white;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: 'heebo';
+    
+}
+.edu{
+    position: relative;
+    left: 130px;
+    margin-bottom: 30px;
+    color: #f70776;
+    padding-top: 30px;
+font-family: 'heebo';
+font-size: 24px;
+}
+
+
+.mainline{
+    border-left: 0.5px solid white;
+    height: 530px;
+    width: 200px;
+    position: relative;
+    left: 130px;
+    
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #f70776;
+    left: -5px;
+    border-radius: 50%;
+}
+.t{
+    margin-top: -5px;
+margin-left: 25px;
+color: #f70776;
+font-size:21px;
+font-family: "heebo";
+margin-bottom: 10px;
+}
+.web1{
+    font-weight: bold;
+    margin-left: 25px;
+    color: azure;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: "heebo";
+}
+.web{
+    margin-left: 25px;
+    margin-bottom: 40px;
+    color:white;
+    font-family: "heebo";
+}
+.secondmaindiv{
+    display: flex;
+    height:700px;
+
+}
+.html{
+    height:70px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+}
+.secondsubdivtwo{
+   width:50%;
+   height:500px;
+   margin-left: 600px;
+   margin-top: 0px;
+   
+}
+.secondsubdivthree{
+    display: flex;
+    flex-wrap: wrap;
+}
+.htmltxt{
+    color:white;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    font-family: 'heebo';
+}
+.html2{
+    height:80px;
+    margin-right: 180px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.htmltxt4{
+    color:white;
+    margin-top: 10px;
+    margin-left: px;
+    font-family: 'heebo'
+}
+.htmltxt3{
+    color:white;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'heebo'
+}
+.htmltxtw{
+    height:80px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    color:white;
+    font-family: 'heebo';
+}
+.word{
+    height:80px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+.htmltxt1{
+    color:white;
+    margin-bottom: 50px;
+    margin-left: 55px;
+    font-family: 'heebo';
+    ;
+}
+.skills{
+    position: relative;
+    left: 230px;
+    margin-bottom: 30px;
+    color: #f70776;
+    padding-top: 30px;
+    font-family: 'heebo';
+font-size: 24px;
+}
+.imageone{
+    height:520px;
+    
+}
+.check{
+    margin-top: 6px;
+    text-align: center;
+    margin-bottom: 40px;
+    color:white !important;
+}
+
+.container {
+    position: relative;
+    width: 30%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("4330-dark-pink-bokeh-light-background-vector.jpg");
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'heebo';
+  }
+  .thirdmaindiv{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .thirdmaindivtwo{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .check{
+    margin-bottom: 35px;
+    font-family: 'heebo';
+    font-size: 24px;
+  }
+  .click{
+    
+    
+    color: white !important;
+  }
+.colours:hover{
+    color:#f70776 !important;
+}
+
+
+  .contact{
+    margin-top: 30px;
+    text-align: center;
+    font-family: "heebo";
+    color: #f70776;
+  }
+  .hear{
+    text-align: center;
+    font-family: "heebo";
+    margin-bottom: 20px;
+    color:white;
+  }
+  .fourthmaindiv{
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:600px;
+    background-image: url("pexels-photo-2387793.jpeg");
+  }
+  input{
+    
+    height:40px;
+    margin-left: 35%;
+    margin-top: 35px;
+    padding: 5px 150px;
+    
+  }
+  textarea{
+    
+    height:80px;
+    margin-left: 35%;
+    margin-top: 50px;
+ padding:20px 115px;
+  }
+  .submit{
+    
+    margin-top: 50px;
+   padding:10px 300px;
+    height:50px;
+  margin-left: 29%;
+  color:white;
+  background-color: #f70776;
+  border:none;
+  box-shadow: #f70776;
+  font-weight: bold;
+  font-family: 'heebo';
+
+  }
+  ::placeholder{
+    
+    font-family: "heebo";
+    
+  }
+  .world{
+    font-size: 24px;
+  }
+  .port{
+    text-align: center;
+    font-family: 'heebo';
+    color:#f70776;
+    margin-top: 40px;
+
+  }
+  .my{
+    text-align: center;
+    position: relative;
+    font-family: 'heebo';
+    
+    color:#f70776;
+  }
+  .resume{
+  padding: 15px 97px;
+  margin-top: 13px;
+  margin-left: 116px;
+  background-color:rgba(0, 0, 0, 0.64);
+  border: none;
+font-size: 17px;
+border:0.5px solid rgba(255, 255, 255, 0.236);
+
+  }
+
+  .overflow{
+    overflow: hidden;
+}
